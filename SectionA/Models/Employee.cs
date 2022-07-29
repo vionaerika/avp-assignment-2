@@ -1,6 +1,7 @@
 // Viona Erika
 // 211285T
 using System;
+using System.Reflection;
 using System.Collections.Generic;
 
 namespace models;
@@ -17,4 +18,24 @@ public class Employee
     public string? HireType { get; set; }
     public double? Salary { get; set; }
     public double? MonthlyPayout { get; set; } = 0.0;
+
+    public void generateListForCorpAdmin()
+    {
+        PropertyInfo lastProp = this.GetType().GetProperties().Last();
+        string requiredDetails = "";
+        foreach (PropertyInfo prop in this.GetType().GetProperties())
+        {
+            if (prop.Equals(lastProp))
+            {
+                requiredDetails += $"{prop.Name}";
+            }
+            else
+            {
+                requiredDetails += $"{prop.Name}|";
+            }
+        }
+        Console.WriteLine(requiredDetails);
+    }
+    // public string generateListForProcurement (){}
+    // public string generateListForITDepartment (){}
 }

@@ -11,15 +11,9 @@ class program
 {
     static void Main(string[] args)
     {
+        Employee employee = new Employee();
+        employee.generateListForCorpAdmin();
         List<List<string>> employeeList = readHRMasterList();
-        foreach (List<string> employee in employeeList)
-        {
-            foreach (string details in employee)
-            {
-                Console.Write($"{details} ");
-            }
-            Console.WriteLine();
-        }
     }
 
     public static List<List<string>> readHRMasterList()
