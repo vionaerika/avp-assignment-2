@@ -10,16 +10,23 @@ namespace program;
 
 class program
 {
+    private static readonly string HR_MASTER_LIST_PATH = "../HRMasterlist.txt";
+
     static void Main(string[] args)
     {
+        Employee employee = new Employee();
+        employee.generateListForCorpAdmin();
         List<Employee> employeeList = readHRMasterList();
     }
 
     public static List<Employee> readHRMasterList()
     {
-        string path = "../HRMasterlist.txt";
         List<Employee> employeeList = new List<Employee>();
-        using Stream fileStream = new FileStream(path, FileMode.Open, FileAccess.Read);
+        using Stream fileStream = new FileStream(
+            HR_MASTER_LIST_PATH,
+            FileMode.Open,
+            FileAccess.Read
+        );
         // Type employeeType = typeof(Employee);
         using (StreamReader file = new StreamReader(fileStream))
         {
