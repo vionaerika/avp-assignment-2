@@ -10,7 +10,7 @@ public class Employee
     public string? Nric { get; set; }
     public string? FullName { get; set; }
     public string? Salutation { get; set; }
-    public DateTime? StartDate { get; set; }
+    public DateTime StartDate { get; set; }
     public string? Designation { get; set; }
     public string? Department { get; set; }
     public string? MobileNo { get; set; }
@@ -23,6 +23,23 @@ public class Employee
         string[] requiredData = { FullName!, Designation!, Department! };
         return (String.Join(",", requiredData));
     }
-    // public string generateListForProcurement (){}
-    // public string generateListForITDepartment (){}
+
+    public string generateListForProcurement()
+    {
+        string[] requiredData = { FullName!, Salutation!, Designation!, Department!, MobileNo! };
+        return (String.Join(",", requiredData));
+    }
+
+    public string generateListForITDepartment()
+    {
+        string[] requiredData =
+        {
+            Nric!,
+            FullName!,
+            StartDate.ToString("dd/MM/yy"),
+            Department!,
+            MobileNo!
+        };
+        return (String.Join(",", requiredData));
+    }
 }
