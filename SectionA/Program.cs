@@ -88,7 +88,7 @@ public class program
         }
         catch (Exception)
         {
-            Console.WriteLine($"Error trying to read from {CORP_ADMIN_INFO_PATH}");
+            Console.WriteLine($"Error trying to write to {CORP_ADMIN_INFO_PATH}");
             Environment.Exit(1);
         }
     }
@@ -107,7 +107,7 @@ public class program
         }
         catch (Exception)
         {
-            Console.WriteLine($"Error trying to read from {PROCUREMENT_INFO_PATH}");
+            Console.WriteLine($"Error trying to write to {PROCUREMENT_INFO_PATH}");
             Environment.Exit(1);
         }
     }
@@ -126,7 +126,7 @@ public class program
         }
         catch (Exception)
         {
-            Console.WriteLine($"Error trying to read from {IT_DEPARTMENT_INFO_PATH}");
+            Console.WriteLine($"Error trying to write to {IT_DEPARTMENT_INFO_PATH}");
             Environment.Exit(1);
         }
     }
