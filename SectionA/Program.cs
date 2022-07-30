@@ -8,7 +8,7 @@ using System.Globalization;
 
 namespace SectionA.Program;
 
-class program
+public class program
 {
     private static string HR_MASTER_LIST_PATH = "../HRMasterlist.txt";
     private static string CORP_ADMIN_INFO_PATH = "../CorporateAdmin.txt";
