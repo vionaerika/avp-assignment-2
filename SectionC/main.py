@@ -9,24 +9,24 @@ HR_MASTER_LIST_PATH = "../HRMasterlist.txt"
 def read_master_list(file):
     employeeList = []
 
-    # try:
-    with open(file, "r") as data:
-        for line in data:
-            employeeListLine = line.strip().split("|")
-            employeeList.append(Employee(
-                employeeListLine[0],
-                employeeListLine[1],
-                employeeListLine[2],
-                datetime.strptime(employeeListLine[3], "%d/%m/%Y"),
-                employeeListLine[4],
-                employeeListLine[5],
-                employeeListLine[6],
-                employeeListLine[7],
-                float(employeeListLine[8])
-            ))
-    # except:
-    #     print(f"Error trying to read from {file}")
-    #     exit(1)
+    try:
+        with open(file, "r") as data:
+            for line in data:
+                employeeListLine = line.strip().split("|")
+                employeeList.append(Employee(
+                    employeeListLine[0],
+                    employeeListLine[1],
+                    employeeListLine[2],
+                    datetime.strptime(employeeListLine[3], "%d/%m/%Y"),
+                    employeeListLine[4],
+                    employeeListLine[5],
+                    employeeListLine[6],
+                    employeeListLine[7],
+                    float(employeeListLine[8])
+                ))
+    except:
+        print(f"Error trying to read from {file}")
+        exit(1)
 
     return employeeList
 
