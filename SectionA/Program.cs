@@ -3,10 +3,10 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
-using models;
+using SectionA.Models;
 using System.Globalization;
 
-namespace program;
+namespace SectionA.Program;
 
 class program
 {
