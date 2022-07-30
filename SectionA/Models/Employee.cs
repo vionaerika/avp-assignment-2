@@ -26,7 +26,7 @@ public class Employee
 
     public string generateStringForProcurement()
     {
-        string[] requiredData = { FullName!, Salutation!, Designation!, Department!, MobileNo! };
+        string[] requiredData = { Salutation!, FullName!, MobileNo!, Designation!, Department! };
         return (String.Join(",", requiredData));
     }
 
