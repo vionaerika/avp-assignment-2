@@ -12,8 +12,8 @@ class program
 {
     private static string HR_MASTER_LIST_PATH = "../HRMasterlist.txt";
     private static string CORP_ADMIN_INFO_PATH = "../CorporateAdmin.txt";
-    private static string PROCUREMENT_INFO_PATH = "../ITDepartment.txt";
-    private static string IT_DEPARTMENT_INFO_PATH = "../Procurement.txt";
+    private static string IT_DEPARTMENT_INFO_PATH = "../ITDepartment.txt";
+    private static string PROCUREMENT_INFO_PATH = "../Procurement.txt";
 
     private delegate void onboardEmployees(List<Employee> employeeList);
 

@@ -36,7 +36,7 @@ public class Employee
         {
             Nric!,
             FullName!,
-            StartDate.ToString("dd/MM/yy"),
+            StartDate.ToString("dd/MM/yyyy"),
             Department!,
             MobileNo!
         };
