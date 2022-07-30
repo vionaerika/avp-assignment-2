@@ -18,19 +18,19 @@ public class Employee
     public double? Salary { get; set; }
     public double? MonthlyPayout { get; set; } = 0.0;
 
-    public string generateListForCorpAdmin()
+    public string generateStringForCorpAdmin()
     {
         string[] requiredData = { FullName!, Designation!, Department! };
         return (String.Join(",", requiredData));
     }
 
-    public string generateListForProcurement()
+    public string generateStringForProcurement()
     {
         string[] requiredData = { FullName!, Salutation!, Designation!, Department!, MobileNo! };
         return (String.Join(",", requiredData));
     }
 
-    public string generateListForITDepartment()
+    public string generateStringForITDepartment()
     {
         string[] requiredData =
         {
