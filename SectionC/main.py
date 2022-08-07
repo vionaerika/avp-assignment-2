@@ -1,5 +1,7 @@
+# Viona Erika
+# 211285T
 from datetime import datetime
-from functools import *
+from functools import reduce
 from Models.Employee import Employee
 
 HR_MASTER_LIST_PATH = "../HRMasterlist.txt"

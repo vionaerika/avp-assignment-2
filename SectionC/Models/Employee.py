@@ -1,3 +1,5 @@
+# Viona Erika
+# 211285T
 class Employee:
     def __init__(self, nric, fullName, salutation, startDate, designation, department, mobileNo, hireType, salary, monthlyPayout=0.0):
         self.nric = nric
