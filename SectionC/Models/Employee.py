@@ -1,7 +1,7 @@
 class Employee:
-    def __init__(self, nric, fulltime, salutation, startDate, designation, department, mobileNo, hireType, salary, monthlyPayout=0.0):
+    def __init__(self, nric, fullName, salutation, startDate, designation, department, mobileNo, hireType, salary, monthlyPayout=0.0):
         self.nric = nric
-        self.fulltime = fulltime
+        self.fullName = fullName
         self.salutation = salutation
         self.startDate = startDate
         self.designation = designation
